@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10089" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Tro-kr-ZtX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
+    </dependencies>
+    <scenes>
+        <!--Meet Sophia-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Homework_1_5_try_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sophia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="HcD-KL-EcX">
+                                <rect key="frame" x="180" y="113" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.99291115999221802" green="0.99568349123001099" blue="0.99203580617904663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="62t-5s-F5G"/>
+                                    <constraint firstAttribute="width" constant="240" id="SR9-Li-1On"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zk-jw-GGg">
+                                <rect key="frame" x="180" y="293" width="30" height="30"/>
+                                <state key="normal" title="Info">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pdY-Gq-MaK" kind="push" id="aAS-r6-uaW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvt-Rj-46j">
+                                <rect key="frame" x="374" y="293" width="40" height="30"/>
+                                <state key="normal" title="Goals">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Bxs-Po-LTN" kind="push" id="UW7-vk-nN7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sophia's First App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zs4-Ii-RoM">
+                                <rect key="frame" x="255" y="66" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="HcD-KL-EcX" secondAttribute="centerX" id="5AO-aF-6hn"/>
+                            <constraint firstItem="HcD-KL-EcX" firstAttribute="top" secondItem="Zs4-Ii-RoM" secondAttribute="bottom" constant="26" id="K2i-aL-hF5"/>
+                            <constraint firstAttribute="centerX" secondItem="Zs4-Ii-RoM" secondAttribute="centerX" id="KjR-FJ-L1L"/>
+                            <constraint firstItem="gvt-Rj-46j" firstAttribute="top" secondItem="HcD-KL-EcX" secondAttribute="bottom" constant="52" id="dbY-nh-tHF"/>
+                            <constraint firstItem="Zs4-Ii-RoM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="46" id="e1h-7A-Bl3"/>
+                            <constraint firstAttribute="centerX" secondItem="gvt-Rj-46j" secondAttribute="centerX" constant="-94" id="mIy-zg-udZ"/>
+                            <constraint firstItem="0zk-jw-GGg" firstAttribute="top" secondItem="HcD-KL-EcX" secondAttribute="bottom" constant="52" id="nUj-YY-atY"/>
+                            <constraint firstAttribute="centerX" secondItem="0zk-jw-GGg" secondAttribute="centerX" constant="105" id="zwb-Cm-kUb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Meet Sophia" id="gGJ-mg-E4M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1717" y="1055"/>
+        </scene>
+        <!--Introduction-->
+        <scene sceneID="gnr-EL-819">
+            <objects>
+                <viewController id="pdY-Gq-MaK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6TS-qX-oQo"/>
+                        <viewControllerLayoutGuide type="bottom" id="KuD-3Y-FP4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BqB-O2-TfZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wC8-dd-q1t">
+                                <rect key="frame" x="175" y="150" width="250" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="QFI-kX-9UW"/>
+                                    <constraint firstAttribute="height" constant="300" id="gXB-3s-DgP"/>
+                                </constraints>
+                                <string key="text">Hi, I'm Sophia. I work for the City of New York as an economic development strategist and am always looking for new ways to improve how government leverages technology. I'm passionate about improving how cities communicate with citizens. I live in Brooklyn with my boyfriend and love to explore new neighborhoods on the weekends. </string>
+                                <color key="textColor" red="0.071354694664478302" green="0.029797540977597237" blue="0.018169790506362915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wC8-dd-q1t" firstAttribute="centerX" secondItem="BqB-O2-TfZ" secondAttribute="centerX" id="2k5-67-1dg"/>
+                            <constraint firstItem="wC8-dd-q1t" firstAttribute="centerY" secondItem="BqB-O2-TfZ" secondAttribute="centerY" id="IXm-v4-wy9"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Introduction" id="ZN9-TH-i2J"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3i1-Aj-TdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1717" y="1802"/>
+        </scene>
+        <!--My Goals-->
+        <scene sceneID="ZPW-X2-fHf">
+            <objects>
+                <viewController id="Bxs-Po-LTN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JSK-S9-Jlj"/>
+                        <viewControllerLayoutGuide type="bottom" id="d7p-oJ-I5c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fW7-ie-bE8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitty.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MTr-ql-Pjl">
+                                <rect key="frame" x="200" y="159" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="A2y-py-45y"/>
+                                    <constraint firstAttribute="width" constant="200" id="Thy-fw-qaw"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="My goals are to be able to build prototypes of a few different types of apps - with a focus on civic tech related topics." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Fa-Bz-BNb">
+                                <rect key="frame" x="200" y="284" width="200" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ChL-ih-w21"/>
+                                    <constraint firstAttribute="height" constant="100" id="NyG-wV-xil"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Fa-Bz-BNb" firstAttribute="top" secondItem="MTr-ql-Pjl" secondAttribute="bottom" constant="25" id="BFL-GN-deH"/>
+                            <constraint firstItem="MTr-ql-Pjl" firstAttribute="centerX" secondItem="fW7-ie-bE8" secondAttribute="centerX" id="Ee6-V9-wPS"/>
+                            <constraint firstItem="0Fa-Bz-BNb" firstAttribute="centerX" secondItem="fW7-ie-bE8" secondAttribute="centerX" id="GIa-wj-bNf"/>
+                            <constraint firstItem="MTr-ql-Pjl" firstAttribute="top" secondItem="JSK-S9-Jlj" secondAttribute="bottom" constant="95" id="h3Z-Ej-iog"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Goals" id="tso-5T-qVW">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="GOG-ME-cie">
+                            <connections>
+                                <segue destination="0lI-aU-mkb" kind="push" id="oCQ-XX-rDS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UAG-0k-Y9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2345" y="1800"/>
+        </scene>
+        <!--More about my goals-->
+        <scene sceneID="hdo-f0-tRP">
+            <objects>
+                <viewController id="0lI-aU-mkb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OjT-H9-0Zq"/>
+                        <viewControllerLayoutGuide type="bottom" id="71Z-pn-adV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hER-KW-QX3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I also love graphic design and want to use this course to explore that hobby of mine." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3T2-nm-xBW">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="cZb-zC-U16"/>
+                                    <constraint firstAttribute="width" constant="240" id="dp1-Az-sXX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3T2-nm-xBW" firstAttribute="centerY" secondItem="hER-KW-QX3" secondAttribute="centerY" id="203-vK-eb3"/>
+                            <constraint firstItem="3T2-nm-xBW" firstAttribute="centerX" secondItem="hER-KW-QX3" secondAttribute="centerX" id="Ce6-NI-UXr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="More about my goals" id="erE-Lr-OMA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0xV-La-91f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2994" y="1800"/>
+        </scene>
+        <!--Login Page-->
+        <scene sceneID="PBi-Gp-neB">
+            <objects>
+                <viewController id="jRb-hg-YRC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UE6-CQ-zvc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qsg-Vo-ZHJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kHY-8L-I1y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9rd-yM-8VH">
+                                <rect key="frame" x="200" y="250" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Imr-ci-511"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFs-2v-t7B">
+                                <rect key="frame" x="281" y="307" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="push" id="uBL-TI-8OI"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v5f-D7-vwa">
+                                <rect key="frame" x="200" y="195" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Vc0-xB-qtz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dFs-2v-t7B" firstAttribute="centerX" secondItem="9rd-yM-8VH" secondAttribute="centerX" id="FJa-x7-rFW"/>
+                            <constraint firstItem="9rd-yM-8VH" firstAttribute="centerX" secondItem="kHY-8L-I1y" secondAttribute="centerX" id="IiA-FB-t8c"/>
+                            <constraint firstItem="9rd-yM-8VH" firstAttribute="top" secondItem="v5f-D7-vwa" secondAttribute="bottom" constant="25" id="VGz-Rl-XWq"/>
+                            <constraint firstItem="dFs-2v-t7B" firstAttribute="top" secondItem="9rd-yM-8VH" secondAttribute="bottom" constant="27" id="aTe-CP-TSd"/>
+                            <constraint firstItem="v5f-D7-vwa" firstAttribute="centerX" secondItem="kHY-8L-I1y" secondAttribute="centerX" id="f4j-WL-osj"/>
+                            <constraint firstItem="9rd-yM-8VH" firstAttribute="top" secondItem="UE6-CQ-zvc" secondAttribute="bottom" constant="230" id="wJD-6W-eO4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login Page" id="2ab-xy-omX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3HU-kJ-K05" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="1055"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3xk-7s-AHf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tro-kr-ZtX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="08u-jD-bjy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jRb-hg-YRC" kind="relationship" relationship="rootViewController" id="6Fk-lE-HnV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pV7-IO-SHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155" y="1055"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kitty.jpg" width="576" height="341"/>
+        <image name="sophia.jpeg" width="638" height="640"/>
+    </resources>
+</document>
